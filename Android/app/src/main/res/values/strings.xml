@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">老人智能陪伴系统</string>
+    <string name="action_settings">Settings</string>
+
+    //Button
+
+    <string name="main_wifi_power">WiFi</string>
+    <string name="main_wifi_on">WiFi: ON</string>
+    <string name="main_wifi_off">WiFi:OFF</string>
+
+
+    <string name="temperature">温度(℃)：</string>
+    <string name="humidity">湿度(%RH)：</string>
+    <string name="xangle">X：</string>
+    <string name="yangle">Y：</string>
+    <string name="zangle">Z：</string>
+    <string name="insidepos">当前位置：</string>
+    <string name="scanwifi">扫描</string>
+    <string name="openwifi">打开</string>
+    <string name="closewifi">关闭</string>
+    <string name="wifistatus">查看</string>
+    <string name="getdata">获取</string>
+    <string name="connect">连接</string>
+    <string name="disconnect">断开</string>
+    <string name="sendcommand">发送</string>
+    <string name="clear">清除</string>
+    <string name="help">帮助</string>
+    <string name="distemp">温度</string>
+    <string name="dishumi">湿度</string>
+    <string name="disxang">X倾角</string>
+    <string name="disyang">Y倾角</string>
+    <string name="diszang">Z倾角</string>
+    <string name="dispos">当前位置</string>
+
+    <string name="dishelp">\n
+        您可在主界面看到房间内监控信息的实时显示。\n
+        点击WiFi按钮，可以打开/关闭设备WiFi。\n
+        点击连接，即可与服务器建立连接。\n
+        点击断开，即可与服务器断开连接。\n
+        点击查看，即可查看设备与网络信息。\n
+        点击获取，即可获取温湿度、角度、实时位置等信息。\n
+        点击清除，即可清屏信息栏。\n
+        可以在命令栏输入指令，然后点击发送。\n
+        在信息栏可以看到运行的信息。\n
+        点击返回，即可返回到主界面。
+    </string>
+    <string name="disback">返回</string>
+    <string name="help_title">使用方法</string>
+    <string name="help_copyright">©2016 LAB440</string>
+    <string name="menu_help">帮助</string>
+
+</resources>

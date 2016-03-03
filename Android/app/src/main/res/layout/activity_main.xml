@@ -1,0 +1,232 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/screen"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"  
+    android:orientation="vertical">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_control_row1"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+        <EditText
+            android:id="@+id/main_command"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:hint="Command"
+            android:textSize="16sp"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/sendcommand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sendcommand"
+            android:enabled="false"/>
+
+        <ToggleButton
+            android:id="@+id/btnWiFiPower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_wifi_power"
+            android:checked="false"
+            android:textOn="@string/main_wifi_on"
+            android:textOff="@string/main_wifi_off"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_control_row2"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/connect"/>
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disconnect"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/WiFistatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wifistatus"
+            android:layout_marginRight="10dip"/>
+
+        <Button
+            android:id="@+id/btnGetData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/getdata"
+            android:layout_marginRight="10dip"
+            android:enabled="false"/>
+
+        <Button
+            android:id="@+id/h_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_temp"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:id="@+id/h_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/temperature"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/temp_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/distemp"
+            android:textSize="16sp"
+            android:editable="false" />
+
+        <TextView
+            android:id="@+id/h_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/humidity"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/humi_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/dishumi"
+            android:textSize="16sp"
+            android:editable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_angle"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/h_xangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xangle"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/x_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/disxang"
+            android:textSize="16sp"
+            android:editable="false"/>
+
+        <TextView
+            android:id="@+id/h_yangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yangle"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/y_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/disyang"
+            android:textSize="16sp"
+            android:editable="false"/>
+
+        <TextView
+            android:id="@+id/h_zangle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zangle"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/z_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/diszang"
+            android:textSize="16sp"
+            android:editable="false"/>
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main_posi"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/h_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/insidepos"
+            android:paddingLeft="5dip"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:id="@+id/pos_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/dispos"
+            android:textSize="16sp"
+            android:editable="false"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="88dp"
+            android:text="@string/clear"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+
+        <EditText
+            android:id="@+id/main_msg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:hint="Meaasge Box."
+            android:text=""
+            android:enabled="false"/>
+
+    </ScrollView>
+
+
+     
+
+     
+        
+</LinearLayout>
